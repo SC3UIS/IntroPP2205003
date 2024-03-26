@@ -1,0 +1,7 @@
+El código usa un algoritmo de ordenación en paralelo usando OpenMP, el cual genera un arreglo de 100.000
+números aleatorios entre o y 9999.
+Luego empieza el cronometro que mide el tiempo que se demora en ejecutarse el algoritmo.
+El arreglo se divide en sub regalos los cuales son ordenados en paralelo mediante pragma omp task.
+En la función partition selecciona un pivote que reorganiza los elementos para poner los menores a la 
+izquierda y los mayores a la derecha la función generate random genera números aleatorios,
+al final los termina poniendo de menor a mayor.
